@@ -1,0 +1,30 @@
+{
+  "framework": "Daedalus",
+  "version": "1.0.0",
+  "safety_level": "CAGE",
+  "kill_switch_gpio": 4,
+  "auto_detect_hardware": true,
+  "log_retention_days": 30,
+  "budget_tracking": true,
+  "cells": [
+    {"cell_id": 1, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 2, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 3, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 4, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 5, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 6, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 7, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []},
+    {"cell_id": 8, "target_type": "generic_soc", "safety": "CAGE", "bus_config": {"i2c": true, "spi": true, "uart": true, "usb": true}, "hardware_extensions": []}
+  ],
+  "execution_defaults": {
+    "concurrent_cells": 1,
+    "inter_cell_delay_ms": 100,
+    "max_execution_time_sec": 3600,
+    "auto_report": true
+  },
+  "opsec": {
+    "sanitize_logs": false,
+    "encrypt_reports": false,
+    "burn_after_reading": false
+  }
+}

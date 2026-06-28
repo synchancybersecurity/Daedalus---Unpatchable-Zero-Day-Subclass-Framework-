@@ -1,0 +1,6 @@
+smbus2>=0.4.0
+pyserial>=3.5
+RPi.GPIO>=0.7.1; platform_machine=='aarch64' or platform_machine=='armv7l'
+spidev>=3.5; platform_machine=='aarch64' or platform_machine=='armv7l'
+numpy>=1.24.0
+pytest>=7.0.0
