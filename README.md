@@ -9,7 +9,7 @@
     ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚══════╝
 ```
 
-### **UNPATCHABLE ZERO-DAY SUBCLASS FRAMEWORK**
+### **UNPATCHABLE ZERO DAY SUBCLASS FRAMEWORK**
 
 **Cage Laboratory Hardware Testing Suite**
 *SynChanCyberSecurity LLC | Agent X Authorized*
@@ -23,10 +23,10 @@ leaving only the "how do we make it fail" calibration phase.
 
 | Feature | Description |
 |---------|-------------|
-| **8-Cell Grid** | Independent testing cells with per-cell hardware isolation |
-| **Auto-Discovery** | I2C / SPI / UART / USB extension scanning |
-| **Physical Kill Switch** | GPIO4 hardware abort — human hand is the only fail-safe |
-| **Per-Target Calibration** | Physical, hands-on analog tuning per silicon |
+| **8-Cell Grid** | Independent testing cells with per cell hardware isolation |
+| **Auto Discovery** | I2C / SPI / UART / USB extension scanning |
+| **Physical Kill Switch** | GPIO4 hardware abort — human hand is the only fail safe |
+| **Per Target Calibration** | Physical, hands on analog tuning per silicon |
 | **$15K Budget Ceiling** | Commodity hardware only — no custom ASICs |
 | **5 Attack Vectors** | Rowhammer, EMFI, Laser, Thermal, Voltage Glitch |
 
@@ -36,9 +36,9 @@ leaving only the "how do we make it fail" calibration phase.
 
 **[CAGE]** SIMULATION ONLY — No physical signals sent to targets
 **[LIVE]** HARDWARE ACTIVE — Kill switch ARMED on GPIO4 required
-**[WAR]** AUTONOMOUS MODE — Human hand on kill-switch at ALL times
+**[WAR]** AUTONOMOUS MODE — Human hand on kill switch at ALL times
 
-> **The human kill-switch is the sole fail-safe.**
+> **The human kill switch is the sole fail safe.**
 
 ---
 
@@ -56,7 +56,7 @@ CLI commands:
 ```
 daedalus> status          # Show all 8 cell states
 daedalus> arm             # Arm physical kill switch
-daedalus> scan 1          # Auto-detect hardware on cell 1
+daedalus> scan 1          # Auto detect hardware on cell 1
 daedalus> cal 1 MT41K256M16   # Calibrate for target chip
 daedalus> exec 1 rowhammer MT41K256M16   # Execute vector
 daedalus> report          # Generate JSON execution report
@@ -107,7 +107,7 @@ BUDGET: $4,853 / $15,000 (32% used)
 | Category | Items | Cost |
 |----------|-------|------|
 | Controllers | 8x Raspberry Pi 5 8GB | $640 |
-| RF/SDR | 4x RTL-SDR + 2x HackRF | $380 |
+| RF/SDR | 4x RTL SDR + 2x HackRF | $380 |
 | Comms | RFID, LoRa, GPS, CAN modules | $200 |
 | Power | PSUs, relays, buck converters | $344 |
 | Injection | EMFI coils, laser diodes, Peltier | $664 |
@@ -128,7 +128,7 @@ BUDGET: $4,853 / $15,000 (32% used)
 | Category | Items | Cost |
 |----------|-------|------|
 | Controllers | 8x Raspberry Pi 5 8GB | $640 |
-| RF/SDR | 4x RTL-SDR + 2x HackRF | $380 |
+| RF/SDR | 4x RTL SDR + 2x HackRF | $380 |
 | Comms | RFID, LoRa, GPS, CAN modules | $200 |
 | Power | PSUs, relays, buck converters | $344 |
 | Injection | EMFI coils, laser diodes, Peltier | $664 |
@@ -149,7 +149,7 @@ Full BOM: `hardware/bom.json`
 The calibration engine automates:
 - Parameter sweep prompts
 - Result logging
-- Best-parameter extraction
+- Best parameter extraction
 - Persistent calibration database (`calibration_db.json`)
 
 **What YOU do physically:**
@@ -178,7 +178,7 @@ This framework is intended **exclusively** for:
 
 ### PHYSICAL SAFETY WARNING
 
-This framework interfaces with **high-voltage electronics, electromagnetic pulse generators, high-powered lasers, and thermal manipulation systems**. Hazards include electrocution, permanent eye damage (Class 3B/4 laser), burns/fire, and component destruction.
+This framework interfaces with **high voltage electronics, electromagnetic pulse generators, high powered lasers, and thermal manipulation systems**. Hazards include electrocution, permanent eye damage (Class 3B/4 laser), burns/fire, and component destruction.
 
 **Operator Requirements:**
 - Trained personnel ONLY
@@ -186,7 +186,7 @@ This framework interfaces with **high-voltage electronics, electromagnetic pulse
 - Laser safety eyewear (808nm rated, OD 4+)
 - Fire extinguisher within 3 meters
 - Emergency stop armed before EVERY session
-- Minimum two-person rule for LIVE and WAR modes
+- Minimum two person rule for LIVE and WAR modes
 
 ### CFAA COMPLIANCE
 
@@ -216,7 +216,7 @@ arising from your use, misuse, or violation of law.
 ## License
 
 Apache 2.0 — SynChanCyberSecurity LLC
-ITAR-controlled. Cage laboratory use only.
+ITAR controlled. Cage laboratory use only.
 
 ---
 
