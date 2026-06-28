@@ -1,38 +1,37 @@
 # D.Z.D.E
 
-**Daedalus SubZD Engine 1.0**
+*Daedalus SubZD Engine 1.0**
 *Cage Laboratory Hardware Testing Suite*
 SynChanCyberSecurity LLC | Agent X Authorized
 
----
 
-## Overview
+
+# Overview
 
 Daedalus eliminates the "can we talk to this chip" R&D phase,
 leaving only the "how do we make it fail" calibration phase.
 
 | Feature | Description |
 |---------|-------------|
-| **8 Cell Grid** | Independent testing cells with per cell hardware isolation |
-| **Auto Discovery** | I2C / SPI / UART / USB extension scanning |
-| **Physical Kill Switch** | GPIO4 hardware abort — human hand is the only fail safe |
-| **Per Target Calibration** | Physical, hands on analog tuning per silicon |
-| **$15K Budget Ceiling** | Commodity hardware only — no custom ASICs |
-| **5 Attack Vectors** | Rowhammer, EMFI, Laser, Thermal, Voltage Glitch |
+| *8 Cell Grid** | Independent testing cells with per cell hardware isolation |
+| *Auto Discovery* | I2C / SPI / UART / USB extension scanning |
+| *Physical Kill Switch* | GPIO4 hardware abort human hand is the only fail safe |
+| *Per Target Calibration* | Physical, hands on analog tuning per silicon |
+| *$15K Budget Ceiling* | Commodity hardware only no custom ASICs |
+| *5 Attack Vectors* | Rowhammer, EMFI, Laser, Thermal, Voltage Glitch |
 
 ---
 
-## Safety Levels
+# Safety Levels
 
-**[CAGE]** SIMULATION ONLY — No physical signals sent to targets
-**[LIVE]** HARDWARE ACTIVE — Kill switch ARMED on GPIO4 required
-**[WAR]** AUTONOMOUS MODE — Human hand on kill switch at ALL times
+*[CAGE]* SIMULATION ONLY, No physical signals sent to targets
+*[LIVE]* HARDWARE ACTIVE, Kill switch ARMED on GPIO4 required
+*[WAR]* AUTONOMOUS MODE, Human hand on kill switch at ALL times
 
-> **The human kill switch is the sole fail safe.**
+> *The human kill switch is the sole fail safe.*
 
----
 
-## Quick Start
+# Quick Start
 
 ```bash
 # Install dependencies
@@ -104,14 +103,13 @@ BUDGET: $4,853 / $15,000 (32% used)
 | Instruments | Logic analyzers, scopes, meters | $260 |
 | Infrastructure | Enclosures, cables, storage | $1,365 |
 | Contingency | Shipping, replacements, buffer | $500 |
-| **TOTAL** | | **$4,853** |
-| **REMAINING** | | **$10,147** |
+| *TOTAL* | | *$4,853* |
+| *REMAINING* | | *$10,147*l* |
 
 Full BOM: `hardware/bom.json`
 
----
 
-## Calibration Philosophy
+# Calibration Philosophy
 
 > "The framework provides hardware interfaces and attack vectors, but analog tuning (laser positioning, thermal rates, EM pulse timing, DRAM row mapping, etc.) must be done manually per specific target silicon. This is normal in hardware security ops."
 
@@ -121,7 +119,7 @@ The calibration engine automates:
 - Best parameter extraction
 - Persistent calibration database (`calibration_db.json`)
 
-**What YOU do physically:**
+*What YOU do physically:**l
 - Position laser spot over die
 - Adjust EM coil height and orientation
 - Map DRAM row adjacencies
@@ -130,26 +128,26 @@ The calibration engine automates:
 
 ---
 
-## Legal Disclaimer
+# Legal Disclaimer
 
 <details>
-<summary><b>⚠️ CLICK TO EXPAND — CRITICAL LEGAL NOTICE</b></summary>
+<summary><b>⚠️ CLICK TO EXPAND CRITICAL LEGAL NOTICE</b></summary>
 
 ### AUTHORIZED USE ONLY
 
-This framework is intended **exclusively** for:
+This framework is intended *exclusively* for:
 - Authorized red team operations with explicit written authorization
 - Academic research in controlled laboratory settings
-- Hardware security research on devices you **OWN** or have **explicit permission** to test
+- Hardware security research on devices you *OWN* or have *explicit permission** to test
 - Cage laboratory environments with proper containment
 
-**YOU MAY NOT** use this framework to test, attack, or interrogate any system you do not own or have explicit written authorization to test.
+*YOU MAY NOT* use this framework to test, attack, or interrogate any system you do not own or have explicit written authorization to test.
 
 ### PHYSICAL SAFETY WARNING
 
-This framework interfaces with **high voltage electronics, electromagnetic pulse generators, high powered lasers, and thermal manipulation systems**. Hazards include electrocution, permanent eye damage (Class 3B/4 laser), burns/fire, and component destruction.
+This framework interfaces with *high voltage electronics, electromagnetic pulse generators, high powered lasers, and thermal manipulation systems*. Hazards include electrocution, permanent eye damage (Class 3B/4 laser), burns/fire, and component destruction.
 
-**Operator Requirements:**
+*Operator Requirements:*
 - Trained personnel ONLY
 - ESD protection (wrist straps, grounded mats)
 - Laser safety eyewear (808nm rated, OD 4+)
@@ -157,34 +155,32 @@ This framework interfaces with **high voltage electronics, electromagnetic pulse
 - Emergency stop armed before EVERY session
 - Minimum two person rule for LIVE and WAR modes
 
-### CFAA COMPLIANCE
+# CFAA COMPLIANCE
 
 Use may implicate the Computer Fraud and Abuse Act (18 U.S.C. 1030), DMCA (17 U.S.C. 1201), and analogous state laws. You represent that you have explicit written authorization for all testing.
 
-### EXPORT CONTROL / ITAR
+# EXPORT CONTROL / ITAR
 
 Certain components and findings may be subject to ITAR (22 CFR 120 130), EAR (15 CFR 730 774), or Wassenaar Arrangement controls. You are solely responsible for export compliance.
 
-### NO WARRANTY
+# NO WARRANTY
 
 THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. IN NO EVENT SHALL SYNCHANCYBERSECURITY LLC, AGENT X, OR CONTRIBUTORS BE LIABLE FOR PHYSICAL INJURY, PROPERTY DAMAGE, DATA LOSS, LEGAL PENALTIES, OR ECONOMIC LOSS.
 
-### INDEMNIFICATION
+# INDEMNIFICATION
 
 By using Daedalus, you agree to indemnify and hold harmless SynChanCyberSecurity LLC from all claims a
 from your use, misuse, or violation of law.
 
-### ACKNOWLEDGMENT
+# ACKNOWLEDGMENT
 
-**BY USING DAEDALUS, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THIS DISCLAIMER.**
+*BY USING DAEDALUS, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THIS DISCLAIMER.**
 
 </details>
 
----
+# License
 
-## License
-
-Apache 2.0 — SynChanCyberSecurity LLC
+Apache 2.0 SynChanCyberSecurity LLC
 ITAR controlled. Cage laboratory use only.
 
 ---
