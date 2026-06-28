@@ -1,18 +1,8 @@
-# Daedalus SubZD Engine 1.0
+# D.Z.D.E
 
-```
-    ██████╗  █████╗ ███████╗██████╗  █████╗ ██╗     ██╗   ██╗███████╗
-    ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║     ██║   ██║██╔════╝
-    ██║  ██║███████║█████╗  ██████╔╝███████║██║     ██║   ██║███████╗
-    ██║  ██║██╔══██║██╔══╝  ██╔══██╗██╔══██║██║     ██║   ██║╚════██║
-    ██████╔╝██║  ██║███████╗██║  ██║██║  ██║███████╗╚██████╔╝███████║
-    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚══════╝
-```
-
-### **UNPATCHABLE ZERO DAY SUBCLASS FRAMEWORK**
-
-**Cage Laboratory Hardware Testing Suite**
-*SynChanCyberSecurity LLC | Agent X Authorized*
+**Daedalus SubZD Engine 1.0**
+*Cage Laboratory Hardware Testing Suite*
+SynChanCyberSecurity LLC | Agent X Authorized
 
 ---
 
@@ -23,7 +13,7 @@ leaving only the "how do we make it fail" calibration phase.
 
 | Feature | Description |
 |---------|-------------|
-| **8-Cell Grid** | Independent testing cells with per cell hardware isolation |
+| **8 Cell Grid** | Independent testing cells with per cell hardware isolation |
 | **Auto Discovery** | I2C / SPI / UART / USB extension scanning |
 | **Physical Kill Switch** | GPIO4 hardware abort — human hand is the only fail safe |
 | **Per Target Calibration** | Physical, hands on analog tuning per silicon |
@@ -81,7 +71,7 @@ daedalus> abort           # EMERGENCY ABORT all cells
 
 ```
     Daedalus Core (daedalus.py)
-         │
+             │
     ┌────┬────┬────┼────┬────┬────┐
     ▼    ▼    ▼    ▼    ▼    ▼    ▼
   Cell Cell Cell ... Cell Cell Cell
@@ -97,27 +87,6 @@ daedalus> abort           # EMERGENCY ABORT all cells
  Extension    Attack      Calibration
  Manager     Vectors      Engine
 ```
-
----
-
-## Hardware BOM
-
-BUDGET: $4,853 / $15,000 (32% used)
-
-| Category | Items | Cost |
-|----------|-------|------|
-| Controllers | 8x Raspberry Pi 5 8GB | $640 |
-| RF/SDR | 4x RTL SDR + 2x HackRF | $380 |
-| Comms | RFID, LoRa, GPS, CAN modules | $200 |
-| Power | PSUs, relays, buck converters | $344 |
-| Injection | EMFI coils, laser diodes, Peltier | $664 |
-| Instruments | Logic analyzers, scopes, meters | $260 |
-| Infrastructure | Enclosures, cables, storage | $1,365 |
-| Contingency | Shipping, replacements, buffer | $500 |
-| **TOTAL** | | **$4,853** |
-| **REMAINING** | | **$10,147** |
-
-Full BOM: `hardware/bom.json`
 
 ---
 
@@ -194,7 +163,7 @@ Use may implicate the Computer Fraud and Abuse Act (18 U.S.C. 1030), DMCA (17 U.
 
 ### EXPORT CONTROL / ITAR
 
-Certain components and findings may be subject to ITAR (22 CFR 120-130), EAR (15 CFR 730-774), or Wassenaar Arrangement controls. You are solely responsible for export compliance.
+Certain components and findings may be subject to ITAR (22 CFR 120 130), EAR (15 CFR 730 774), or Wassenaar Arrangement controls. You are solely responsible for export compliance.
 
 ### NO WARRANTY
 
@@ -203,7 +172,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. IN NO EVENT SHAL
 ### INDEMNIFICATION
 
 By using Daedalus, you agree to indemnify and hold harmless SynChanCyberSecurity LLC from all claims a
-arising from your use, misuse, or violation of law.
+from your use, misuse, or violation of law.
 
 ### ACKNOWLEDGMENT
 
